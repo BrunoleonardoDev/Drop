@@ -16,10 +16,7 @@ header{
 }
 
 body{
-    background: #0B0D17;
-    background-image: url(assets/336625.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: #0B0D17;
     width: 100%;
     
 }
@@ -115,6 +112,7 @@ span{
     text-transform: uppercase;
     border-radius: 10px;
     margin-top: 2rem;
+    margin-bottom: 2REM;
     transition: all 0.5s ease-in;
 }
 
@@ -123,7 +121,7 @@ span{
     color: #fff;
     width: 450px;
     transition: 0.5s all ease-out;
-    box-shadow: 0px -2px 200px #29cd29;
+    box-shadow: 0px -2px 30px #29cd29;
 }
 
 .video{
@@ -132,7 +130,7 @@ span{
     align-items: center;
     height: 700px;
     position: relative;
-    background-color: #000000;
+    background-color: #0B0D17;
     position: relative;
 }
 
@@ -162,6 +160,7 @@ span{
 }
 
 h3{
+    margin-top: .5rem;
     color: white;
 }
 
@@ -170,7 +169,7 @@ h3{
 }
 
 .txt_video{
-    height: 400px;
+    height: 550px;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -182,7 +181,7 @@ h3{
     max-width: 700px;
     border-left: 5px solid #29cd29;
     border-right: 5px solid #29cd29;
-    height: 90px;
+    height: 145px;
     border-radius: 10px;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -192,5 +191,75 @@ h3{
 .txt1:hover{
     transition: all .5s ease-out ;
     max-width: 720px;
-    box-shadow: 0px -2px 300px #29cd29;
+    box-shadow: 0px -2px 30px #29cd29;
+}
+
+.info{
+    display: flex;
+    background-color: #0B0D17;
+}
+
+.info img{
+    width: 600px;
+}
+
+.txt2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 55%;
+}
+
+.txt2 p{
+    width: 80%;
+}
+
+.fones_soltos{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.icone{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-left: 1rem;
+}
+.info2 img{
+    width: 600px;
+}
+
+.info2{
+    display: flex;
+}
+
+.case{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt3{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.fa-bolt{
+    color: #29cd29;
+}
+
+.txt3 p{
+    width: 80%;
 }
