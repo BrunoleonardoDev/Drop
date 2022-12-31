@@ -323,3 +323,7 @@ i{
 .accordion-header{
 border-radius: 10px;
 }
+
+@media (max-width: 400px ) {
+    
+}
