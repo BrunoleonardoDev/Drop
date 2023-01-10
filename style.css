@@ -18,14 +18,6 @@ header{
 body{
     background-color: #0B0D17;
     width: 100%;
-    
-}
-
-a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    transition: all .2s ease-in;
 }
 
 .logo{
@@ -53,6 +45,18 @@ a{
     border-radius: 8px 0px 0px 8px;
 }
 
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: all .2s ease-in;
+}
+
+.nav a:hover{
+    color: #29cd29;
+    transition: all .2s ease-out;
+}
+
 .destaque{
     display: flex;
     align-items: center;
@@ -74,26 +78,24 @@ a{
     margin-bottom: 1rem;
 }
 
-h1{
+.texto h1{
     color: white;
     font-size: 3.5rem;
     text-transform: uppercase;
 }
+
+.texto p{
+    color: white;
+    font-size: 1rem;
+}
+
 
 .preço{
     color: #29cd29;
     font-size: 6rem;
 }
 
-p{
-    color: white;
-    font-size: 1rem;
-}
 
-a:hover{
-    color: #29cd29;
-    transition: all .2s ease-in;
-}
 
 span{
     color: white;
@@ -176,6 +178,7 @@ h3{
 
 .video p{
     margin-bottom: 4rem;
+    color: #fff;
 }
 
 .txt_video{
@@ -205,6 +208,10 @@ h3{
     box-shadow: 0px -2px 30px #29cd29;
 }
 
+.txt1 p{
+    color: #fff;
+}
+
 .info{
     display: flex;
     justify-content: space-around;
@@ -229,6 +236,11 @@ h3{
     background-color: #5c5c5c46;
 }
 
+.txt2 p{
+    color: #fff
+    ;
+}
+
 .fones_soltos{
     width: 50%;
     display: flex;
@@ -249,6 +261,7 @@ i{
 }
 .info2 img{
     width: 600px;
+    transition: all .2s ease-out;
 }
 
 .info2{
@@ -278,6 +291,7 @@ i{
     box-shadow: 0px -2px 30px #29cd29;
 }
 .txt3 p{
+    color: #fff;
     max-width: 700px;
     min-width: 700px;
     border-left: 5px solid #29cd29;
@@ -300,30 +314,183 @@ i{
 }
 
 
+
 .perguntas{
-    height: 700px;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
+}
+
+.box_ask{
+    width: 100%;
+    height: 700px;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.accordion{
+    width: 60%;
+    height: 100px;
+    background-color: #21222a;
+}
+
+.accordion h2{
+    width: 100%;
+}
+
+.feedback{
+    width: 100%;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.ask{
-    width: 50%;
-    margin-top: 2rem;
+.feedback button{
+    width: 130px;
+    height: 100px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    font-size: 2rem;
+    color: #0B0D17;
+    margin: 1rem;
 }
 
-.accordion-flush{
-   display: flex;
-   justify-content: space-around;
-   flex-direction: column;
-   height: 300px;
+
+
+.txt_btn{
+    display: flex;
 }
 
-.accordion-header{
-border-radius: 10px;
+.pontos {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1200px;
 }
 
-@media (max-width: 400px ) {
-    
+.pontos p{
+    font-size: .9rem;
+    color: #fff;
+}
+
+.txt_btn1{
+    margin-top: .9rem;
+}
+
+.fotos{
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.foto_ava{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 450px;
+    background-color: #21222a;
+    border-radius: 10px;
+}
+
+.foto_ava img{
+    border-radius: 10px;
+    width: 170px;
+}
+
+.foto_ava p{
+    color: #fff;
+}
+
+.face img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.face{
+    margin-top: 1rem;
+}
+
+.face p{
+    font-size: .7rem;
+}
+
+.user h3{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.user p{
+    margin: 0;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0rem .8rem .0rem .8rem;
+}
+
+.comentario{
+    border: 1px solid white;
+}
+
+.feed{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-top: 1rem;
+    padding: .5rem;
+}
+
+.date p{
+    text-align: center;
+}
+
+.date{
+    margin-top: .6rem;
+}
+
+.avatar{
+    margin-right: 1rem;
+}
+
+button.carousel-control-next{
+    width: 20px;
+    height: 20px;
+}
+
+button.carousel-control-prev{
+    width: 20px;
+    height: 20px;   
+}
+
+.foto_produto{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 350px;
+    margin-top: .7rem;
+}
+
+.next-back{
+    width: 100%;
+    height: 40px;
+    border: 1px solid red;
+    position: relative;
+}
+
+.next-back button{
+    position: absolute;
 }
